@@ -13,6 +13,15 @@ build-type:          Simple
 -- extra-source-files:
 cabal-version:       >=1.10
 
+executable urn
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >=4.7 && <5
+                     , monad-bayes
+                     , mtl
+  other-modules:       UrnModel
+
 library
   hs-source-dirs:      src
   exposed-modules:     Numeric.LogDomain,
